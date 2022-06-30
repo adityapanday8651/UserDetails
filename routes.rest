@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/62bd4a09c31fd50ca9c3700a
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"Aditya Pandey",
+    "emailId":"Aditya511@gmail.com",
+    "phoneNumber":"8651482710",
+    "location":"Hyderabad"
+}
+
+###
+DELETE http://localhost:3000/users/62bac2bf91581a9588401d9a
+
+###
+PATCH http://localhost:3000/users/62bd4a09c31fd50ca9c3700a
+Content-Type: application/json
+
+{
+    "location": "Hathua",
+}
